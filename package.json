@@ -1,0 +1,42 @@
+{
+  "name": "thewords",
+  "version": "1.0.0",
+  "description": "An application that allows for the creation, editin, and lookupg of english words",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "nodemon ./src/app.js --exec babel-node --presets es2015,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socc726/thewords.git"
+  },
+  "author": "sam merrill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/socc726/thewords/issues"
+  },
+  "homepage": "https://github.com/socc726/thewords#readme",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "mocha": "^3.1.0"
+  },
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.6.1",
+    "request": "^2.75.0",
+    "webpack": "^1.13.2"
+  }
+}
