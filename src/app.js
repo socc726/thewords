@@ -10,6 +10,7 @@ import NotFoundPage from './components/NotFoundPage';
 // initialize the server and configure support for ejs templates
 const app = new Express();
 const server = new Server(app);
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -29,7 +30,7 @@ app.get('*', (req, res) => {
   match(
     { routes, location: req.url },
     (err, redirectLocation, renderProps) => {
-
+      console.log(renderProps)
       // in case of error display the error message
       if (err) {
         return res.status(500).send(err.message);

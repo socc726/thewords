@@ -4,10 +4,10 @@ var express = require('express')
 
 router.use('/words', require('./words'))
 
-// router.get('/', function(req, res) {
-//   Words.all(function(err, words) {
-//     res.json(words)
-//   })
-// })
+router.get('/', function(req, res) {
+  Words.all(function(err, words) {
+    res.json(words)
+  })
+})
 
 module.exports = router
